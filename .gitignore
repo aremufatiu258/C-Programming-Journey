@@ -55,4 +55,5 @@ dkms.conf
 *.dwo
 # notes files
 z.note
+Temp-code
 Digital-note/
