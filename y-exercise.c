@@ -278,18 +278,14 @@ int main()
 
   //  1-cent Multiplier  //🔥:
   int days = 30;
-  char wish;
   double amountPerDay = 0.01;
-  printf("Do you wish to have 1 dollar in a moment or to have a cent($0.01) fo 30 days?\n Type A or B respectively for your choice: ");
-  scanf(" %c", &wish);
-  if (wish == 'A' || wish == 'a')
-  {
-    printf("Ohhh!, looks like you need some money urgently.");
-  }
-  
 
-  int i;
-  scanf("%d", &i);
+  // for (int i = 1; i <= days; i++)
+  // {
+  //   amountPerDay *= 2;
+  //   printf("Day %d: %.3f\n", i, amountPerDay);
+  // }
+  // printf("Your total amount after 30 days is: $%.2f", amountPerDay);
 
 
 
