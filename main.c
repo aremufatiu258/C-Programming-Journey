@@ -5,8 +5,8 @@
 int main()
 {
   //   ||-------- Placeholder --------||
-  printf("I am %d years old now and next years i will be %d years old.\n", 17, 18);
-  // printf("My average grade: %.1f\n", 93.7);
+  printf("Hello, Welcome to my %c programming journey!", 'C');
+  printf("My average grade: %.1f\n", 93.7);
 
   //   ||-------- Variable declaration --------||
   int age = 17;
