@@ -5,7 +5,7 @@
 int main()
 {
   //   ||-------- Placeholder --------||
-  printf("Hello, Welcome to my %c programming journey!", 'C');
+  printf("Hello, Welcome to my %c programming journey! 🚀", 'C');
   printf("My average grade: %.1f\n", 93.7);
 
   //   ||-------- Variable declaration --------||
