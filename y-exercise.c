@@ -276,7 +276,7 @@ int main()
     printf("%d * %d = %d\n", num, i, num*i);
   }
 
-  //  1-cent Multiplier  //🔥:
+  //-- 1-cent Multiplier --//🔥:
   int days = 30;
   char choice;
   double amountPerDay = 0.01;
@@ -290,7 +290,16 @@ int main()
   {
     printf("Did you want ");
   }
-  
+
+  //-- Evens specifier --//🔥:
+  int numberOfEvens, evens = 2;
+  printf("Enter number of evens: ");
+  scanf("%d", &numberOfEvens);
+  for (int i = 1; i <= numberOfEvens; i++)
+  {
+    printf("%d ", evens);
+    evens += 2;
+  }
   
 
   // for (int i = 1; i <= days; i++)
