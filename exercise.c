@@ -324,6 +324,22 @@ int main()
     printf("\n");
   }
 
+  int num, sumOfNum = 0;
+  printf("Enter a number: ");
+  scanf("%d", &num);
+
+  for (int i = 1; i <= num; i++)
+  {
+    if (i % 3 == 0 || i % 5 == 0)
+    {
+      printf("%d can be divided by both 3 or 5!\n", i);
+      sumOfNum += i;
+    }
+    
+  }
+  printf("The sum of the number divisible by 3 and 5 btw %d is: %d", num, sumOfNum);
+  
+
   // for (int i = 1; i <= days; i++)
   // {
   //   amountPerDay *= 2;
