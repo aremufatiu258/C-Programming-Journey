@@ -266,14 +266,14 @@ int main()
   }
   printf("\n");
   //-- Multiplication Table --//🔥:
-  int num, element;
+  int number, element;
   printf("Enter num: ");
-  scanf("%d", &num);
-  printf("Enter the number of element of %d multiplicator: ", num);
+  scanf("%d", &number);
+  printf("Enter the number of element of %d multiplicator: ", number);
   scanf("%d", &element);
   for (int i = 1; i <= element; i++)
   {
-    printf("%d * %d = %d\n", num, i, num*i);
+    printf("%d * %d = %d\n", number, i, number*i);
   }
 
   //-- 1-cent Multiplier --//🔥:
@@ -332,7 +332,7 @@ int main()
   {
     if (i % 3 == 0 || i % 5 == 0)
     {
-      printf("%d can be divided by both 3 or 5!\n", i);
+      printf("%d can be divided by either 3 or 5!\n", i);
       sumOfNum += i;
     }
     
