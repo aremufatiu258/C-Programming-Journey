@@ -288,7 +288,9 @@ int main()
   }
   else if (choice == 'B' || choice == 'b')
   {
-    printf("Did you want ");
+    char progress;
+    printf("Did you want to see the progress of the doubling each day: ");
+    scanf(" %c", progress);
   }
 
   //-- Evens specifier --//🔥:
