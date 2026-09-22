@@ -303,6 +303,26 @@ int main()
     evens += 2;
   }
   
+  //-- pyramid print form --//🔥:
+  int userRows;
+  int space, currentValue = 1;
+  printf("Insert 'n' (number of rows in pyramid): ");
+  scanf("%d", &userRows);
+  space = userRows - 1;
+  for (int i = 1; i <= userRows; i++)
+  {
+    for (int j = space; j >= 1; j--)
+    {
+      printf(" ");
+    }
+    space--;
+    for (int k = 1; k <= i; k++)
+    {
+      printf("%d ", currentValue);
+      currentValue += 1;
+    }
+    printf("\n");
+  }
 
   // for (int i = 1; i <= days; i++)
   // {
