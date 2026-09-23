@@ -326,7 +326,7 @@ int main()
 
   //-- Ascending order of sequence --//🔥:
   int sequenceSize, tempSize;
-  int previousValue = 0, currentValue = 0, veryAscendingFlag = 0;
+  int previousValue = 0, currentValue = 0, veryAscendingFlag = 1;
   do
   {
     printf("Enter the size of your sequence of number: ");
@@ -343,9 +343,9 @@ int main()
     }
     else
     {
-      if (currentValue >= previousValue)
+      if (currentValue < previousValue)
       {
-        veryAscendingFlag++;
+        veryAscendingFlag = 0;
       }
       previousValue = currentValue;
       tempSize--;
@@ -353,7 +353,7 @@ int main()
 
   } while (tempSize > 0);
 
-  if (veryAscendingFlag == sequenceSize)
+  if (veryAscendingFlag == 1)
   {
     printf("This sequence is Very Ascending! \n");
   }
