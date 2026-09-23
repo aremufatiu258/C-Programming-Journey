@@ -6,7 +6,7 @@ int main()
 {
   //   ||-------- Printing -------||
   printf("Full Name: Are... \nAge: ... \nGender: Male\n");
-  printf("%d + %d = %d\n", 5, 2, 5+2);
+  printf("%d + %d = %d\n", 5, 2, 5 + 2);
   printf("%d %% %d = %d\n", 5, 2, 5 % 2);
 
   //   ||-------- Input --------||
@@ -16,7 +16,7 @@ int main()
   scanf("%d", &currentYear);
   printf("Enter your currentAge: ");
   scanf("%d", &currentAge);
-  printf("Your year of birth is: %d\n", currentYear-currentAge);
+  printf("Your year of birth is: %d\n", currentYear - currentAge);
 
   //   ||-------- Casting --------||
   int grade1, grade2, grade3;
@@ -24,7 +24,7 @@ int main()
   scanf("%d", &grade2);
   scanf("%d", &grade3);
   printf("Average is: %.2lf\n", (double)(grade1 + grade2 + grade3) / 3);
-  
+
   double celsius, fahrenheit;
   printf("Enter Fahrenheit degree: ");
   scanf("%lf", &fahrenheit);
@@ -205,7 +205,7 @@ int main()
   {
     printf("Other..!\n");
   }
-  
+
   //   ||-------- Loops --------||
   //-- while Loop --//🔥:
   int userAmount, count = 0;
@@ -214,7 +214,7 @@ int main()
   while (count < userAmount)
   {
     printf("* ");
-    count ++;
+    count++;
   }
   printf("\n");
   //-- do..while Loop --//🔥:
@@ -273,7 +273,7 @@ int main()
   scanf("%d", &element);
   for (int i = 1; i <= element; i++)
   {
-    printf("%d * %d = %d\n", number, i, number*i);
+    printf("%d * %d = %d\n", number, i, number * i);
   }
 
   //-- 1-cent Multiplier --//🔥:
@@ -302,7 +302,7 @@ int main()
     printf("%d ", evens);
     evens += 2;
   }
-  
+
   //-- pyramid print form --//🔥:
   int userRows;
   int space, currentValue = 1;
@@ -323,47 +323,43 @@ int main()
     }
     printf("\n");
   }
-  
+
   //-- Ascending order of sequence --//🔥:
   int sequenceSize, tempSize;
-  int previousValue = 0, sequenceNumber = 0, veryAscendingFlag = 0;
-  printf("Enter the size of your sequence of number: ");
-  scanf("%d", &sequenceSize);
-  if (sequenceSize <= 0)
+  int previousValue = 0, currentValue = 0, veryAscendingFlag = 0;
+  do
   {
-    printf("Wait a minute... Try again please! \n");
-  }
-  else
+    printf("Enter the size of your sequence of number: ");
+    scanf("%d", &sequenceSize);
+  } while (sequenceSize <= 0);
+  tempSize = sequenceSize;
+  do
   {
-    tempSize = sequenceSize;
-    do
+    printf("Enter number: ");
+    scanf("%d", &currentValue);
+    if (currentValue < 0)
     {
-      printf("Enter number: ");
-      scanf("%d", &sequenceNumber);
-      if (sequenceNumber < 0)
-      {
-        printf("Number isn't positive! \n");
-      }
-      else
-      {
-        if (sequenceNumber >= previousValue)
-        {
-          veryAscendingFlag++;
-        }
-        previousValue = sequenceNumber;
-        tempSize--;
-      }
-
-    } while (tempSize > 0);
-
-    if (veryAscendingFlag == sequenceSize)
-    {
-      printf("This sequence is Very Ascending! \n");
+      printf("Number isn't positive! \n");
     }
     else
     {
-      printf("This sequence is NOT very Ascending! ");
+      if (currentValue >= previousValue)
+      {
+        veryAscendingFlag++;
+      }
+      previousValue = currentValue;
+      tempSize--;
     }
+
+  } while (tempSize > 0);
+
+  if (veryAscendingFlag == sequenceSize)
+  {
+    printf("This sequence is Very Ascending! \n");
+  }
+  else
+  {
+    printf("This sequence is NOT very Ascending! ");
   }
 
   // for (int i = 1; i <= days; i++)
@@ -372,9 +368,6 @@ int main()
   //   printf("Day %d: %.3f\n", i, amountPerDay);
   // }
   // printf("Your total amount after 30 days is: $%.2f", amountPerDay);
-
-
-
 
   return 0;
 }
