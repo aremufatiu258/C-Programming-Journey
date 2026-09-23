@@ -358,11 +358,11 @@ int main()
 
     if (veryAscendingFlag == sequenceSize)
     {
-      printf("Very Ascending! \n");
+      printf("This sequence is Very Ascending! \n");
     }
     else
     {
-      printf("Not very Ascending! ");
+      printf("This sequence is NOT very Ascending! ");
     }
   }
 
