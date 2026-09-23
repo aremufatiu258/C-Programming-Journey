@@ -188,7 +188,7 @@ int main()
   char userChar;
   printf("Enter character: ");
   scanf(" %c", &userChar);
-  printf("%d\n", userChar);
+  printf("%d in Binary form\n", userChar);
   if (userChar >= 'A' && userChar <= 'Z')
   {
     printf("%c is an Uppercase Letter!\n", userChar);
@@ -254,12 +254,12 @@ int main()
   {
     if (i == 5)
     {
-      printf("%d continue!", i);
+      printf("(%d)-continue!", i);
       continue;
     }
     else if (i == 9)
     {
-      printf("%d break!", i);
+      printf("(%d)-break!", i);
       break;
     }
     printf("%d ", i);
@@ -326,7 +326,7 @@ int main()
 
   //-- Ascending order of sequence --//🔥:
   int sequenceSize, tempSize;
-  int previousValue = 0, currentValue = 0, veryAscendingFlag = 1;
+  int previousValue = 0, sequenceValue = 0, veryAscendingFlag = 1;
   do
   {
     printf("Enter the size of your sequence of number: ");
