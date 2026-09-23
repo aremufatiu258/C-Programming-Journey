@@ -324,6 +324,47 @@ int main()
     printf("\n");
   }
   
+  //-- Ascending order of sequence --//🔥:
+  int sequenceSize, tempSize;
+  int previousValue = 0, sequenceNumber = 0, veryAscendingFlag = 0;
+  printf("Enter the size of your sequence of number: ");
+  scanf("%d", &sequenceSize);
+  if (sequenceSize <= 0)
+  {
+    printf("Wait a minute... Try again please! \n");
+  }
+  else
+  {
+    tempSize = sequenceSize;
+    do
+    {
+      printf("Enter number: ");
+      scanf("%d", &sequenceNumber);
+      if (sequenceNumber < 0)
+      {
+        printf("Number isn't positive! \n");
+      }
+      else
+      {
+        if (sequenceNumber >= previousValue)
+        {
+          veryAscendingFlag++;
+        }
+        previousValue = sequenceNumber;
+        tempSize--;
+      }
+
+    } while (tempSize > 0);
+
+    if (veryAscendingFlag == sequenceSize)
+    {
+      printf("Very Ascending! \n");
+    }
+    else
+    {
+      printf("Not very Ascending! ");
+    }
+  }
 
   // for (int i = 1; i <= days; i++)
   // {
