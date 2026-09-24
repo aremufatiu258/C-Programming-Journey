@@ -351,7 +351,6 @@ int main()
       previousValue = currentValue;
       tempSize--;
     }
-
   } while (tempSize > 0);
 
   if (veryAscendingFlag == 1)
@@ -362,6 +361,27 @@ int main()
   {
     printf("This sequence is NOT very Ascending! ");
   }
+
+  //-- Sum of Even and Odd Digits --//🔥:
+  int givenNumber, currentDigit;
+  int sumOfEven = 0, sumOfOdd = 0;
+  printf("Enter a positive numbers: ");
+  scanf("%d", &givenNumber);
+
+  while (givenNumber > 0)
+  {
+    currentDigit = givenNumber % 10;
+    if (currentDigit % 2 == 0)
+    {
+      sumOfEven += currentDigit;
+    }
+    else
+    {
+      sumOfOdd += currentDigit;
+    }
+    givenNumber /= 10;
+  }
+  printf("Even Digit Sum - Odd Digit Sum = %d\n", sumOfEven - sumOfOdd);
 
   // for (int i = 1; i <= days; i++)
   // {
