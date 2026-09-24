@@ -343,9 +343,10 @@ int main()
     }
     else
     {
-      if (currentValue < previousValue)
+      if (currentValue <= previousValue)
       {
         veryAscendingFlag = 0;
+        break;
       }
       previousValue = currentValue;
       tempSize--;
