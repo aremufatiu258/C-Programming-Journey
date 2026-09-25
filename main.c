@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <math.h>
 
+//   ||-------- Functions --------||
+void greetings()
+{
+  printf("Hello!\n");
+  printf("Welcome to My C Programming Journey!");
+  printf("Good luck! \n");
+}
+
 int main()
 {
   //   ||-------- Placeholder --------||
@@ -121,12 +129,4 @@ int main()
   //
   //
   return 0;
-}
-
-//   ||-------- Functions --------||
-void greetings()
-{
-  printf("Hello!\n");
-  printf("Welcome to My C Programming Journey!");
-  printf("Good luck! \n");
 }
