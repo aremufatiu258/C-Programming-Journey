@@ -6,8 +6,20 @@
 void greetings()
 {
   printf("Hello!\n");
-  printf("Welcome to My C Programming Journey!");
+  printf("Welcome to My C Programming Journey!\n");
   printf("Good luck! \n");
+}
+
+void printMaxMin(int num1, int num2)
+{
+  if (num1 > num2)
+  {
+    printf("Maximum is: %d, Minimum is: %d", num1, num2);
+  }
+  else
+  {
+    printf("Maximum is: %d, Minimum is: %d", num2, num1);
+  }
 }
 
 int main()
@@ -124,7 +136,9 @@ int main()
     printf("I'm sorry for not listening to my Teacher. I will practice more next time!\n");
   }
 
+  //   ||-------- funtions --------||
   greetings();
+  printMaxMin(5, 6);
   //
   //
   //
