@@ -47,6 +47,8 @@ int main()
   printf("Enter a number(positive number): ");
   scanf("%d", &userNum);
   factorialResult = factoriaOfNumber(userNum);
-    printf("The factoria of %d is: %d", userNum, factorialResult);
+  printf("The factoria of %d is: %d", userNum, factorialResult);
+  // 
+  // 
   return 0;
 }

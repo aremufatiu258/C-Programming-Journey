@@ -389,6 +389,8 @@ int main()
   //   printf("Day %d: %.3f\n", i, amountPerDay);
   // }
   // printf("Your total amount after 30 days is: $%.2f", amountPerDay);
-
+  // 
+  // 
+  // 
   return 0;
 }
