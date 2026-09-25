@@ -11,11 +11,11 @@ void findMaximumDigit(int twoDigitNumber)
     secondDigit = twoDigitNumber % 10;
     if (firstDigit > secondDigit)
     {
-      printf("The maximum number between %d and %d is: %d", firstDigit, secondDigit, firstDigit);
+      printf("The maximum digit in %d is: %d", twoDigitNumber, firstDigit);
     }
     else
     {
-      printf("The maximum number between %d and %d is: %d", firstDigit, secondDigit, secondDigit);
+      printf("The maximum digit in %d is: %d", twoDigitNumber, secondDigit);
     }
   }
   else
