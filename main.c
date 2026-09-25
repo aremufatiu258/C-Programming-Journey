@@ -116,5 +116,17 @@ int main()
     printf("I'm sorry for not listening to my Teacher. I will practice more next time!\n");
   }
 
+  greetings();
+  //
+  //
+  //
   return 0;
+}
+
+//   ||-------- Functions --------||
+void greetings()
+{
+  printf("Hello!\n");
+  printf("Welcome to My C Programming Journey!");
+  printf("Good luck! \n");
 }
