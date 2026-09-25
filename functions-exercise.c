@@ -24,14 +24,14 @@ void findMaximumDigit(int twoDigitNumber)
   }
 }
 
-void factoriaOfNumber(int factoriaNumber)
+int factoriaOfNumber(int factoriaNumber)
 {
   int factorialResult = 1;
   for (int i = 1; i <= factoriaNumber; i++)
   {
     factorialResult *= i;
   }
-  printf("The factoria of %d is: %d", factoriaNumber, factorialResult);
+  return factorialResult;
 }
 
 int main()
@@ -43,10 +43,10 @@ int main()
   findMaximumDigit(twoDigitNumber);
 
   //   ||-------- Factoria of a given number --------||
-  int userNum;
+  int userNum, factorialResult;
   printf("Enter a number(positive number): ");
   scanf("%d", &userNum);
-  factoriaOfNumber(userNum);
-
+  factorialResult = factoriaOfNumber(userNum);
+    printf("The factoria of %d is: %d", userNum, factorialResult);
   return 0;
 }
