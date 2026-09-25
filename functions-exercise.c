@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+//   ||-------- Maximum Digit of Two-Digit Number --------||
 void findMaximumDigit(int twoDigitNumber)
 {
   int firstDigit, secondDigit;
