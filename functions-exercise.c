@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-//   ||-------- Maximum Digit of Two-Digit Number --------||
 void findMaximumDigit(int twoDigitNumber)
 {
   int firstDigit, secondDigit;
@@ -13,11 +11,11 @@ void findMaximumDigit(int twoDigitNumber)
     secondDigit = twoDigitNumber % 10;
     if (firstDigit > secondDigit)
     {
-      printf("The maximum digit in %d is: %d", twoDigitNumber, firstDigit);
+      printf("The maximum digit in %d is: %d\n", twoDigitNumber, firstDigit);
     }
     else
     {
-      printf("The maximum digit in %d is: %d", twoDigitNumber, secondDigit);
+      printf("The maximum digit in %d is: %d\n", twoDigitNumber, secondDigit);
     }
   }
   else
@@ -26,12 +24,29 @@ void findMaximumDigit(int twoDigitNumber)
   }
 }
 
+void factoriaOfNumber(int factoriaNumber)
+{
+  int factorialResult = 1;
+  for (int i = 1; i <= factoriaNumber; i++)
+  {
+    factorialResult *= i;
+  }
+  printf("The factoria of %d is: %d", factoriaNumber, factorialResult);
+}
+
 int main()
 {
+  //   ||-------- Maximum Digit of Two-Digit Number --------||
   int twoDigitNumber;
   printf("Enter a two digit number: ");
   scanf("%d", &twoDigitNumber);
   findMaximumDigit(twoDigitNumber);
+
+  //   ||-------- Factoria of a given number --------||
+  int userNum;
+  printf("Enter a number(positive number): ");
+  scanf("%d", &userNum);
+  factoriaOfNumber(userNum);
 
   return 0;
 }
