@@ -33,6 +33,15 @@ int factorialOfNumber(int factorialNumber)
   return factorial;
 }
 
+int isEven(int num)
+{
+  if (num % 2 == 0)
+  {
+    return 1;
+  }
+  return 0;
+}
+
 int main()
 {
   //   ||-------- Maximum Digit of Two-Digit Number --------||
@@ -46,9 +55,15 @@ int main()
   printf("Enter a number(positive number): ");
   scanf("%d", &userNum);
   factorialResult = factorialOfNumber(userNum);
-  printf("The factoria of %d is: %d", userNum, factorialResult);
-  // 
-  // 
-  // 
+  printf("The factorial of %d is: %d\n", userNum, factorialResult);
+
+  //   ||-------- Check if Number is Even --------||
+  int numberToCheck;
+  printf("Enter a number: ");
+  scanf("%d", &numberToCheck);
+  printf("%d", isEven(numberToCheck));
+  //
+  //
+  //
   return 0;
 }
