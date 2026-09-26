@@ -4,7 +4,6 @@
 void findMaximumDigit(int twoDigitNumber)
 {
   int firstDigit, secondDigit;
-  int maximumDigit;
   if (twoDigitNumber / 10 != 0)
   {
     firstDigit = twoDigitNumber / 10;
@@ -24,14 +23,14 @@ void findMaximumDigit(int twoDigitNumber)
   }
 }
 
-int factoriaOfNumber(int factoriaNumber)
+int factorialOfNumber(int factorialNumber)
 {
-  int factorialResult = 1;
-  for (int i = 1; i <= factoriaNumber; i++)
+  int factorial = 1;
+  for (int i = 1; i <= factorialNumber; i++)
   {
-    factorialResult *= i;
+    factorial *= i;
   }
-  return factorialResult;
+  return factorial;
 }
 
 int main()
@@ -46,7 +45,7 @@ int main()
   int userNum, factorialResult;
   printf("Enter a number(positive number): ");
   scanf("%d", &userNum);
-  factorialResult = factoriaOfNumber(userNum);
+  factorialResult = factorialOfNumber(userNum);
   printf("The factoria of %d is: %d", userNum, factorialResult);
   // 
   // 
